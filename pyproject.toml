@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "blended-latent-diffusion"
+version = "0.0.1"
+authors = ["Omrir Avrahami"]
+description = "blended-latent-diffusion"
+readme = "README.md"
+packages = [{include = "bld", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+torch = "^2.0.0"
+numpy = "^1.24.3"
+opencv-python = "^4.7.0.72"
+torchvision = "^0.15.1"
+einops = "^0.6.1"
+omegaconf = "^2.3.0"
+tqdm = "^4.65.0"
+pillow = "^9.5.0"
+scipy = "^1.10.1"
+clip = {git = "https://github.com/openai/CLIP.git"}
+natsort = "^8.3.1"
+pytorch-lightning = "1.9.4"
+taming-transformers-rom1504 = "^0.0.6"
+ftfy = "^6.1.1"
+regex = "^2023.3.23"
+lpips = "^0.1.4"
+matplotlib = "^3.7.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
